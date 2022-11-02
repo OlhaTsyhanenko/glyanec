@@ -9,10 +9,10 @@
 }
 
 .about-us__img {
-    width: 320px;
+    min-width: 320px;
 
     @media screen and (min-width: 768px) {
-        width: 768px;
+        min-width: 768px;
     }
 
     @media screen and (min-width: 1920px) {

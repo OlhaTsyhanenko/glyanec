@@ -3,12 +3,17 @@
 }
 
 .footer__description {
-    width: 320px;
+    min-width: 320px;
     background-color: var(--main-color);
-    padding: 50px 50px 15px 50px;
+    padding: 20px 20px 15px 20px;
+
+    @media screen and (min-width: 768px) {
+            min-width: 768px;
+        }
 
     @media screen and (min-width: 1920px) {
         width: 831px;
+        padding: 50px 50px 15px 50px;
     }
 }
 
@@ -24,8 +29,13 @@
 
 .logo__text {
     font-weight: 700;
-    font-size: 36px;
+    font-size: 30px;
     color: var(--second-text-color);
+
+    @media screen and (min-width: 768px) {
+        font-size: 36px;
+    }
+
 }
 
 .logo__accent {
@@ -33,24 +43,35 @@
 }
 
 .footer__grid {
-    display: grid;
-    grid-template-columns: auto auto;
     margin-top: 50px;
+
+    @media screen and (min-width: 768px) {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
 }
 
 .footer__grid-part {
     display: flex;
-    margin-right: 87px;
+    justify-content: space-between;
+
+    @media screen and (min-width: 768px) {
+        margin-right: 87px;
+    }
 }
 
 .footer__list-one {
-    margin-right: 55px;
+    @media screen and (min-width: 768px) {
+        margin-right: 55px;
+    }
 }
 
 .footer__list-item {
     display: flex;
     align-items: center;
     font-weight: 700;
+    font-size: 14px;
     color: var(--second-text-color);
     text-transform: uppercase;
 
@@ -66,11 +87,19 @@
         background-color: var(--accent-color);
         margin-right: 6px;
     }
+
+    @media screen and (min-width: 768px) {
+        font-size: 18px;
+    }
 }
 
 
 .footer__grid-data {
     margin-bottom: 84px;
+
+    @media screen and (max-width: 767px) {
+        margin-top: 40px;
+    }
 }
 
 .adress__item {
