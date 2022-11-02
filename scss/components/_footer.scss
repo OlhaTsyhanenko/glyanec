@@ -1,0 +1,155 @@
+.footer {
+
+}
+
+.footer__description {
+    width: 320px;
+    background-color: var(--main-color);
+    padding: 50px 50px 15px 50px;
+
+    @media screen and (min-width: 1920px) {
+        width: 831px;
+    }
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo__icon {
+    fill: var(--second-text-color);
+    margin-right: 15px;
+}
+
+.logo__text {
+    font-weight: 700;
+    font-size: 36px;
+    color: var(--second-text-color);
+}
+
+.logo__accent {
+    color: var(--accent-color);
+}
+
+.footer__grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-top: 50px;
+}
+
+.footer__grid-part {
+    display: flex;
+    margin-right: 87px;
+}
+
+.footer__list-one {
+    margin-right: 55px;
+}
+
+.footer__list-item {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    color: var(--second-text-color);
+    text-transform: uppercase;
+
+    &:not(:last-child) {
+        margin-bottom: 15px;
+    }
+
+    &::before{
+        content: '';
+        display: block;
+        width: 14px;
+        height: 2px;
+        background-color: var(--accent-color);
+        margin-right: 6px;
+    }
+}
+
+
+.footer__grid-data {
+    margin-bottom: 84px;
+}
+
+.adress__item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.adress__link {
+    display: flex;
+    align-items: flex-start
+}
+
+.adress__item-icon {
+    fill: var(--second-text-color);
+    margin-right: 5px;
+}
+
+.adress__item-text {
+    color: var(--second-text-color);
+}
+
+.wrap-tel {
+    display: flex;
+    flex-direction: column;
+}
+
+.adress__item-link {
+    color: var(--accent-color);
+}
+
+
+.grid-data__socnetworks {
+    margin-top: 30px;
+}
+
+.socnetworks__title {
+    color: var(--second-text-color);
+    margin-bottom: 5px;
+}
+
+.socnetworks__list {
+    display: flex;
+}
+
+.socnetworks__item {
+
+    &:not(:last-child) {
+        margin-right: 5px;
+    }
+
+    &:hover,
+    &:focus {
+        .socnetworks__icon {
+            fill: var(--accent-color);
+            transition: var(--duration) var(--timing-function);
+        }
+    }
+}
+
+.socnetworks__icon {
+    fill: var(--second-text-color);
+}
+
+.footer__copyright {
+    font-size: 14px;
+    color: var(--second-text-color);
+}
+
+.footer__development {
+    display: flex;
+    align-items: center;
+}
+
+.development__name {
+    font-family: 'Cuprum', sans-serif;
+    font-size: 14px;
+    line-height: 1.155;
+    color: var(--second-text-color);
+    text-transform: uppercase;
+    margin-left: 3px;
+}

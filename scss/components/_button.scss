@@ -1,0 +1,20 @@
+.btn {
+    display: block;
+    padding: 14px 46px;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+    background-color: var(--accent-color);
+    color: var(--second-text-color);
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0 auto;
+}
+
+.form__btn {
+    width: 100%;
+
+    @media screen and (min-width: 1920px) {
+        padding: 14px 158px;
+    }
+}

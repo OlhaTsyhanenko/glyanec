@@ -1,0 +1,200 @@
+.section__category {
+    margin-bottom: 100px;
+}
+
+.category__list-icon {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: -20px;
+    margin-top: -20px;
+
+    @media screen and (min-width: 1920px) {
+        flex-wrap: nowrap;
+        margin-left: 0;
+        margin-top: 0;
+        justify-content: space-evenly;
+    }
+}
+
+.list-icon__item {
+    flex-basis: calc((100% / 2) - 20px);
+    margin-left: 20px;
+    margin-top: 20px;
+
+    @media screen and (min-width: 768px) {
+        flex-basis: calc((100% / 3) - 20px);
+    }
+
+    @media screen and (min-width: 1920px) {
+        flex-basis: auto;
+        margin-left: 0;
+        margin-top: 0;
+    }
+}
+
+.list-icon__link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &:hover,
+    &:focus {
+        .list-icon__icon {
+            fill: var(--accent-color);
+        }
+        .item__description::after {
+            background-color: var(--accent-color);
+        }
+    }
+}
+
+.list-icon__icon {
+    fill: var(--main-color);
+}
+
+.item__description {
+    font-weight: 700;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: var(--main-color);
+    margin-top: 10px;
+
+    @media screen and (min-width: 768px) {
+        font-size: 24px;
+    }
+
+    &::after {
+        content: '';
+        display: block;
+        width: auto;
+        height: 3px;
+        background-color: transparent;
+        margin-top: 8px;
+    }
+}
+
+.category__cards {
+    display: grid;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 50px;
+
+    @media screen and (min-width: 768px) {
+        grid-row-gap: 50px;
+        grid-column-gap: 30px;
+        grid-template-columns: repeat(2, 369px);
+    }
+
+    @media screen and (min-width: 1920px) {
+        grid-template-columns: repeat(3, 586px);
+        margin-top: 87px;
+    }
+}
+
+.cards__item-description {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+.cards__title {
+    font-weight: 700;
+    color: var(--main-color);
+    text-transform: uppercase;
+
+    @media screen and (min-width: 1920px) {
+        font-size: 24px;
+    }
+}
+
+.cards__price {
+    font-weight: 700;
+    color: var(--main-color);
+    text-transform: uppercase;
+
+    @media screen and (min-width: 1920px) {
+        font-size: 24px;
+    }
+}
+
+.new {
+    color: #FF1B1B;
+}
+
+.cards__price-old {
+    font-weight: 700;
+    font-size: 12px;
+    text-decoration-line: line-through;
+    text-transform: uppercase;
+    color: #BCBDBB;
+
+    @media screen and (min-width: 1920px) {
+        font-size: 18px;
+        margin-left: 10px;
+    }
+}
+
+.cards__img {
+    width: 320px;
+    height: 300px;
+    object-fit: cover;
+
+    @media screen and (min-width: 768px) {
+        width: 369px;
+    }
+
+    @media screen and (min-width: 1920px) {
+        width: 586px;
+    }
+}
+
+.cards__item {
+    position: relative;
+}
+
+.cards__ad {
+    position: absolute;
+    top: 10px;
+    left: 0;
+
+    font-weight: 700;
+    font-size: 18px;
+    color: var(--second-text-color);
+    text-transform: uppercase;
+    padding: 5px 15px;
+    background-color: var(--main-color);
+}
+
+.action {
+    background-color: var(--bg-text);
+    top: 48px;
+}
+
+.cards__item {
+    transition: transform var(--duration) var(--timing-function),
+                background-color var(--duration) var(--timing-function),
+                color var(--duration) var(--timing-function);
+
+    &:hover,
+    &:focus {
+        transform: translateY(-25px);
+        transition: transform var(--duration) var(--timing-function);
+
+        .cards__item-description {
+            background-color: var(--accent-color);
+            transition: background-color var(--duration) var(--timing-function);
+        }
+        .cards__title,
+        .cards__price,
+        .cards__price.new,
+        .cards__price-old {
+            color: var(--second-text-color);
+            transition: color var(--duration) var(--timing-function);
+        }
+    }
+}
+
+
+

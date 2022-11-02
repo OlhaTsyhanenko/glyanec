@@ -1,0 +1,62 @@
+body {
+    color: var(--main-color);
+    background-color: var(--bg);
+    font-family: proxima-nova, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.25;
+}
+
+/*глобальные элементы*/
+.list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.section__title {
+    font-weight: 700;
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: 50px;
+
+    .title__line {
+        position: relative;
+
+        span {
+            position: relative;
+            z-index: 2;
+        }
+
+        &::before {
+            position: absolute;
+            top: 0;
+            left: -5px;
+            bottom: 0;
+            content: '';
+            width: 20px;
+            background-color: var(--accent-color);
+            z-index: 1;
+        }
+    }
+}

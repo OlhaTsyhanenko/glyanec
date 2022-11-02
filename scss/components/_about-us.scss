@@ -1,0 +1,47 @@
+.section__about-us {
+    margin-bottom: 100px;
+}
+
+.about-us__wrap {
+    @media screen and (min-width: 1920px) {
+    position: relative;
+    }
+}
+
+.about-us__img {
+    width: 320px;
+
+    @media screen and (min-width: 768px) {
+        width: 768px;
+    }
+
+    @media screen and (min-width: 1920px) {
+    width: 1407px;
+    margin-left: auto;
+    }
+}
+
+.about-us__description {
+    background-color: var(--second-text-color);
+    border-right: 15px solid var(--accent-color);
+    border-radius: 0px 3px 3px 0px;
+    padding: 30px 20px;
+
+    @media screen and (min-width: 1920px) {
+        position: absolute;
+        top: 100px;
+
+        width: 791px;
+        padding: 50px 30px 50px 50px;
+    }
+}
+
+.description__accent {
+    color: var(--accent-color);
+    text-transform: uppercase;
+}
+
+.description__text {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
