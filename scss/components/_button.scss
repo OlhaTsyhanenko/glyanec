@@ -11,6 +11,22 @@
     margin: 0 auto;
 }
 
+.btn-menu {
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    width: 24px;
+    height: 24px;
+}
+
+.btn-dropdown {
+    display: flex;
+    align-items: center;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+}
+
 .form__btn {
     width: 100%;
 

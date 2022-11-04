@@ -1,0 +1,86 @@
+.section__hero {
+    @media screen and (min-width: 1920px) {
+        position: relative;
+    }
+}
+
+.hero__img {
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+
+    @media screen and (min-width: 768px) {
+        object-fit: cover;
+        min-width: 768px;
+    }
+
+    @media screen and (min-width: 1920px) {
+        min-width: 1920px;
+    }
+}
+
+.hero__description {
+    background-color: var(--second-text-color);
+    border-left: 15px solid var(--accent-color);
+    border-radius: 3px 0px 0px 3px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+
+    @media screen and (min-width: 1920px) {
+        position: absolute;
+        top: 0;
+        left: 51px;
+        width: 462px;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+}
+
+.hero__accent {
+    font-weight: 700;
+    font-size: 64px;
+    margin-bottom: 50px;
+}
+
+.hero__title {
+    font-weight: 700;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.hero__text {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.hero__slider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.slider__number {
+    display: flex;
+    align-items: baseline;
+}
+
+.slider__current {
+    font-weight: 700;
+    font-size: 36px;
+}
+
+.slider__all {
+    font-weight: 700;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.slider__button {
+    margin-top: 10px;
+
+    .icon-left {
+        margin-right: 8px;
+    }
+}
