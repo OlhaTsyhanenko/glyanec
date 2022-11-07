@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
-    <header>
+    <header id="top">
       <nav class="header__nav">
         <div class="nav__wrap">
           <div class="nav__socnetworks">
@@ -186,32 +186,36 @@
       </section>
       <section class="section__benefits">
         <h2 class="section__title">
-          <span class="title__line"><span>Наші переваги</span></span>
+          <span class="title__line"><span>Н</span></span
+          >аші переваги
         </h2>
+
         <ul class="list benefits__list">
           <li class="benefits__item">
-            <a href="" class="link benefits__link"
-              ><img
+            <a class="link benefits__link">
+              <img
                 src="./images/benefits/furniture.jpg"
-                alt="Меблі преміум класу"
+                alt=""
                 class="benefits__img"
+                width=""
               />
-              <div class="benefits__description">
-                <p class="benefits__title">Меблі преміум класу</p>
-                <p class="benefits__text"></p>
+              <div class="benefits__meta">
+                <p class="meta__title">Меблі преміум класу</p>
+                <p class="meta__descr"></p>
               </div>
             </a>
           </li>
           <li class="benefits__item">
-            <a href="" class="link benefits__link"
-              ><img
+            <a class="link benefits__link">
+              <img
                 src="./images/benefits/reliability.jpg"
-                alt="Надійність"
+                alt=""
                 class="benefits__img"
+                width=""
               />
-              <div class="benefits__description">
-                <p class="benefits__title">Надійність</p>
-                <p class="benefits__text">
+              <div class="benefits__meta">
+                <p class="meta__title">Надійність</p>
+                <p class="meta__descr">
                   За 14 років на ринку меблів для дому ми стали надійними
                   партнерами на ринку Вінницької області та України
                 </p>
@@ -219,15 +223,16 @@
             </a>
           </li>
           <li class="benefits__item">
-            <a href="" class="link benefits__link"
-              ><img
+            <a class="link benefits__link">
+              <img
                 src="./images/benefits/shipping.jpg"
-                alt="Безкоштовна доставка"
+                alt=""
                 class="benefits__img"
+                width=""
               />
-              <div class="benefits__description">
-                <p class="benefits__title">Безкоштовна доставка</p>
-                <p class="benefits__text"></p>
+              <div class="benefits__meta">
+                <p class="meta__title">Безкоштовна доставка</p>
+                <p class="meta__descr"></p>
               </div>
             </a>
           </li>
@@ -236,7 +241,8 @@
 
       <section class="section__category">
         <h2 class="section__title">
-          <span class="title__line"><span>Категорії товарів</span></span>
+          <span class="title__line"><span>К</span></span
+          >атегорії товарів
         </h2>
         <div class="list-icon__wrapper">
           <ul class="list category__list-icon">
@@ -388,7 +394,8 @@
 
       <section class="section__about-us">
         <h2 class="section__title">
-          <span class="title__line"><span>Про нас</span></span>
+          <span class="title__line"><span>П</span></span
+          >ро нас
         </h2>
         <div class="about-us__wrap">
           <img
@@ -428,7 +435,8 @@
 
       <section class="section__question">
         <h2 class="section__title">
-          <span class="title__line"><span>Залишились питання?</span></span>
+          <span class="title__line"><span>З</span></span
+          >алишились питання?
         </h2>
         <div class="question__wrap">
           <img
@@ -598,6 +606,14 @@
         </div>
       </div>
       <img src="./images/footer.jpg" alt="footer image" class="footer__img" />
+
+      <div class="back-to-top-wrapper">
+        <a href="#top" class="back-to-top-link" aria-label="Scroll to Top">
+          <svg width="50" height="50" class="development__icon">
+            <use href="./images/symbol-defs.svg#icon-back-to-top"></use>
+          </svg>
+        </a>
+      </div>
     </footer>
   </body>
 </html>

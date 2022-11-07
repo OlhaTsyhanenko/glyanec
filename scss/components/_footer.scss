@@ -1,4 +1,5 @@
 .footer {
+    position: relative;
     @media screen and (min-width: 1920px) {
         display: flex;
     }
@@ -30,10 +31,14 @@
 
 .footer__grid-part {
     display: flex;
-    justify-content: space-between;
+
 
     @media screen and (min-width: 768px) {
         margin-right: 87px;
+    }
+
+    @media screen and (min-width: 1920px) {
+        justify-content: space-between;
     }
 }
 
@@ -68,7 +73,6 @@
         font-size: 18px;
     }
 }
-
 
 .footer__grid-data {
     margin-bottom: 84px;
@@ -107,7 +111,6 @@
     color: var(--accent-color);
 }
 
-
 .grid-data__socnetworks {
     margin-top: 30px;
 }
@@ -138,5 +141,24 @@
 
     @media screen and (min-width: 1920px) {
         width: 1089px;
+    }
+}
+
+.back-to-top-wrapper {
+    position: absolute;
+    top: -25px;
+    left: 36px;
+    pointer-events: none;
+}
+
+.back-to-top-link {
+    pointer-events: all;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+
+    html,
+    body {
+        scroll-behavior: smooth;
     }
 }
