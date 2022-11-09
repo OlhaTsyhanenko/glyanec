@@ -34,33 +34,6 @@ a {
     cursor: pointer;
 }
 
-.section__title {
-    font-weight: 700;
-    font-size: 48px;
-    text-align: center;
-    margin-bottom: 50px;
-
-    .title__line {
-        position: relative;
-
-        span {
-            position: relative;
-            z-index: 2;
-        }
-
-        &::before {
-            position: absolute;
-            top: 0;
-            left: -5px;
-            bottom: 0;
-            content: '';
-            width: 20px;
-            background-color: var(--accent-color);
-            z-index: 1;
-        }
-    }
-}
-
 header,
 main,
 footer {
